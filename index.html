@@ -3,122 +3,295 @@
 
 <head>
     <title>CA Tiroides</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        header img {
+            width: 300px;
+            /* Ajusta el ancho de la imagen */
+            height: 300px;
+            /* Permite que la altura se ajuste proporcionalmente */
+
+        }
+
+        .justificado {
+            text-align: justify;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FFC0CB;
+            color: #be5555;
+            padding: 15px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #0c0c0c;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        h2,
+        h3 {
+            color: #d11212;
+        }
+
+        footer {
+            background-color: #FFC0CB;
+            color: #0a090a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .slider {
+            width: 300px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
+    <p><span id="fecha"></span></p>
     <header>
-        <h1>CA Tiroides</h1>
-        <img src="https://nci-media.cancer.gov/pdq/media/images/733910-750.jpg" alt="Logo CA Tiroides">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <style>
-            header img {
-                width: 250px;
-                /* Ajusta el ancho de la imagen */
-                height: 250px;
-                /* Permite que la altura se ajuste proporcionalmente */
-
-            }
-
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-
-            header {
-                background-color: #FFC0CB;
-                color: #ec0b0b;
-                padding: 20px;
-            }
-
-            h1 {
-                margin: 0;
-            }
-
-            nav ul {
-                list-style-type: none;
-                padding: 10px;
-                margin: 20px;
-            }
-
-            nav ul li {
-                display: inline-block;
-                margin-right: 10px;
-            }
-
-            nav ul li a {
-                color: #0c0c0c;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 15px;
-            }
-
-            section {
-                padding: 40px;
-            }
-
-            h2 {
-                color: #d11212;
-            }
-
-            footer {
-                background-color: #FFC0CB;
-                color: #0a090a;
-                padding: 20px;
-                text-align: center;
-            }
-        </style>
+        <div class="container">
+            <h1>CANCER DE TIROIDES</h1>
+            <div class="slider">
+                <div><img src="https://nci-media.cancer.gov/pdq/media/images/733910-750.jpg" alt="Imagen 1"></div>
+                <div><img
+                        src="https://imagenes.eldebate.com/files/main_image/files/fp/uploads/2022/05/12/627cdae460d05.r_d.485-223.jpeg"
+                        alt="Imagen 2"></div>
+                <div><img
+                        src="https://www.grupogamma.com/wp-content/uploads/2012/01/c%C3%A1ncer-de-tiroides-nota-web.jpg"
+                        alt="Imagen 3"></div>
+                <div><img src="https://www.drrobertogarcia.com/wp-content/uploads/2021/05/tiroides.png" alt="Imagen 4">
+                </div>
+            </div>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#overview">Visión general</a></li>
-                <li><a href="#symptoms">Síntomas</a></li>
-                <li><a href="#diagnosis">Diagnóstico</a></li>
-                <li><a href="#treatment">Tratamiento</a></li>
-                <li><a href="#sobre-mi">Acerca de mi</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+            <div class="container">
+                <ul>
+                    <li><a href="#overview">Visión general</a></li>
+                    <li><a href="#symptoms">Síntomas</a></li>
+                    <li><a href="#diagnosis">Diagnóstico</a></li>
+                    <li><a href="#treatment">Tratamiento</a></li>
+                    <li><a href="#sobre-mi">Acerca de mi</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <section id="overview">
         <h2>Visión general</h2>
-        <p>Aquí puedes escribir una breve descripción sobre el cáncer de tiroides y su importancia.</p>
+        <div class="justificado">
+            <p>El cáncer de tiroides es un tipo de cáncer que se origina en la glándula tiroides, una glándula ubicada
+                en la
+                base del cuello y que produce hormonas que regulan el metabolismo del cuerpo. El cáncer de tiroides
+                puede
+                afectar a personas de cualquier edad, aunque es más común en adultos jóvenes y en mujeres.
+
+                Existen varios tipos de cáncer de tiroides, siendo los más comunes el carcinoma papilar y el carcinoma
+                folicular. Otros tipos menos comunes incluyen el carcinoma medular de tiroides y el carcinoma
+                anaplásico.
+
+                En muchos casos, el cáncer de tiroides no causa síntomas en sus etapas iniciales. Sin embargo, a medida
+                que
+                avanza, algunos posibles signos y síntomas pueden incluir la aparición de un bulto o nódulo en el
+                cuello,
+                dolor en el cuello o garganta, cambios en la voz, dificultad para tragar, inflamación de los ganglios
+                linfáticos y cambios en la respiración.
+
+                El diagnóstico del cáncer de tiroides generalmente se realiza mediante una combinación de exámenes
+                físicos,
+                análisis de sangre, ecografías, biopsias y pruebas de imagen como la tomografía computarizada (TC) o la
+                resonancia magnética (RM).
+
+                El tratamiento del cáncer de tiroides depende del tipo y la etapa del cáncer, así como de otros factores
+                individuales. Los tratamientos comunes incluyen la cirugía para extirpar la glándula tiroides o parte de
+                ella, la radioterapia y la terapia hormonal. En algunos casos, puede ser necesario el seguimiento a
+                largo
+                plazo para controlar la función tiroidea y detectar cualquier recurrencia o metástasis.
+
+                Es importante tener en cuenta que cada caso de cáncer de tiroides es único, por lo que es fundamental
+                consultar con un médico especializado para recibir un diagnóstico preciso y un plan de tratamiento
+                adecuado.
+            </p>
+        </div>
     </section>
 
     <section id="symptoms">
         <h2>Síntomas</h2>
-        <p>Enumera los síntomas comunes del cáncer de tiroides y proporciona información adicional si es necesario.</p>
+        <div class="justificado">
+            <ul>
+                <li>Bulto o nódulo en el cuello</li>
+                <li>Dolor en el cuello o garganta</li>
+                <li>Cambios en la voz</li>
+                <li>Dificultad para tragar</li>
+                <li>Inflamación de los ganglios linfáticos en el cuello</li>
+                <li>Cambios en la respiración</li>
+            </ul>
+        </div>
+
+        <p>Es importante tener en cuenta que estos síntomas pueden variar en cada individuo y no necesariamente indican
+            la presencia de cáncer de tiroides. Si experimentas alguno de estos síntomas o tienes preocupaciones, es
+            recomendable consultar a un médico para un diagnóstico adecuado.</p>
     </section>
 
     <section id="diagnosis">
-        <h2>Diagnóstico</h2>
-        <p>Explique cómo se diagnostica el cáncer de tiroides y qué pruebas se utilizan para ello.</p>
+        <div class="justificado">
+            <h2>Diagnóstico de cáncer de tiroides</h2>
+
+            <h3>Exámenes físicos</h3>
+            <p>Un médico puede realizar un examen físico para evaluar el cuello en busca de la presencia de bultos o
+                nódulos en la glándula tiroides.</p>
+
+            <h3>Análisis de sangre</h3>
+            <p>Se pueden realizar análisis de sangre para medir los niveles de hormonas tiroideas y detectar posibles
+                alteraciones en la función de la tiroides.</p>
+
+            <h3>Ecografía</h3>
+            <p>La ecografía utiliza ondas de sonido para crear imágenes detalladas de la glándula tiroides y los
+                posibles nódulos o tumores presentes.</p>
+
+            <h3>Biopsia</h3>
+            <p>Una biopsia es una prueba en la que se toma una muestra de tejido de la glándula tiroides para su
+                análisis. Puede realizarse una biopsia con aguja fina (BAAF) o una biopsia abierta dependiendo del caso.
+            </p>
+
+            <h3>Pruebas de imagen</h3>
+            <p>Además de la ecografía, se pueden utilizar pruebas de imagen como la tomografía computarizada (TC), la
+                resonancia magnética (RM) y la gammagrafía para evaluar la extensión del cáncer y detectar la presencia
+                de metástasis.</p>
+
+            <p>Es importante destacar que el diagnóstico del cáncer de tiroides debe ser realizado por un profesional de
+                la salud, y las pruebas utilizadas pueden variar según la situación clínica de cada paciente.</p>
+        </div>
     </section>
 
     <section id="treatment">
         <h2>Tratamiento</h2>
-        <p>Proporciona información sobre las opciones de tratamiento disponibles para el cáncer de tiroides.</p>
+        <div class="justificado">
+            <h3>Cirugía</h3>
+            <p>La cirugía es un tratamiento común para el cáncer de tiroides. Puede implicar la extirpación parcial o
+                total de la glándula tiroides, dependiendo de la etapa y tipo de cáncer.</p>
+
+            <h3>Terapia de yodo radiactivo</h3>
+            <p>Después de la cirugía, se puede administrar terapia de yodo radiactivo para destruir cualquier tejido
+                tiroideo residual y las células cancerosas restantes.</p>
+
+            <h3>Terapia hormonal</h3>
+            <p>La terapia hormonal puede ser utilizada para reemplazar las hormonas tiroideas naturales y suprimir la
+                producción de hormona estimulante de la tiroides (TSH), lo que puede ayudar a prevenir la recurrencia
+                del cáncer.</p>
+
+            <h3>Radioterapia externa</h3>
+            <p>En casos más avanzados o en presencia de metástasis, se puede utilizar radioterapia externa para dirigir
+                haces de radiación hacia el área afectada y destruir las células cancerosas.</p>
+
+            <h3>Terapias dirigidas</h3>
+            <p>En algunos casos, se pueden utilizar medicamentos específicos para atacar células cancerosas con
+                mutaciones genéticas específicas.</p>
+
+            <h3>Vigilancia y seguimiento</h3>
+            <p>Después del tratamiento, se requerirá un seguimiento a largo plazo para evaluar la respuesta al
+                tratamiento, detectar cualquier recurrencia y controlar la función tiroidea.</p>
+
+            <p>Es importante recordar que las opciones de tratamiento pueden variar según el tipo y la etapa del cáncer,
+                así como las características individuales de cada paciente. Un médico especialista es la mejor persona
+                para recomendar el tratamiento adecuado para cada situación.</p>
+        </div>
     </section>
 
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
-        <p>¡Hola! Soy Neira, un apasionado del desarrollo web y me encanta crear sitios web increíbles.</p>
+        <div class="justificado">
+            <p>Soy Neira, una apasionada del desarrollo web. Desde que descubrí este fascinante mundo, me he
+                sumergido en aprender y crear experiencias digitales únicas.</p>
+
+            <p>Disfruto de la combinación perfecta entre creatividad y lógica que implica el desarrollo web. La
+                posibilidad de materializar ideas a través de código y ver cómo cobran vida en el navegador es algo que
+                me llena de emoción.</p>
+
+            <p>Me encanta experimentar con diferentes tecnologías y lenguajes de programación, siempre buscando estar al
+                día con las últimas tendencias y mejores prácticas. Mi objetivo es crear sitios web y aplicaciones que
+                no solo sean funcionales, sino también visualmente atractivos y amigables para los usuarios.</p>
+
+            <p>La resolución de problemas y el enfoque en los detalles son aspectos fundamentales para mí. Disfruto
+                enfrentando desafíos y encontrando soluciones eficientes y elegantes para mejorar la experiencia del
+                usuario.</p>
+
+            <p>El desarrollo web es un campo en constante evolución, lo que me brinda la oportunidad de aprender y
+                crecer continuamente. Me emociona trabajar en proyectos desafiantes y colaborar con otros profesionales
+                para crear soluciones digitales innovadoras.</p>
+
+            <p>Estoy emocionada de continuar explorando y desarrollando mis habilidades en el apasionante mundo del
+                desarrollo web y de contribuir a la creación de experiencias en línea excepcionales.</p>
+        </div>
     </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>Puedes contactarme a través de mis redes sociales:</p>
-        <ul class="redes-sociales">
-            <li><a href="https://www.facebook.com/tu_perfil" target="_blank">Facebook</a></li>
-            <li><a href="https://twitter.com/tu_perfil" target="_blank">Twitter</a></li>
-            <li><a href="https://www.instagram.com/tu_perfil" target="_blank">Instagram</a></li>
-            <li><a href="https://www.GitHub.com/tu_perfil" target="_blank">GitHub</a></li>
-        </ul>
+        <div class="justificado">
+            <p>Puedes contactarme a través de mis redes sociales:</p>
+            <ul class="redes-sociales">
+                <li><a href="https://www.facebook.com/tu_perfil" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/tu_perfil" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/tu_perfil" target="_blank">Instagram</a></li>
+                <li><a href="https://www.GitHub.com/tu_perfil" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2023 CA Tiroides. Todos los derechos reservados.</p>
     </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var fechaActual = new Date();
+            var elementoFecha = document.getElementById('fecha');
+            elementoFecha.innerHTML = fechaActual.toDateString();
+        });
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true, // Activar autoplay
+                autoplaySpeed: 2000 // Intervalo de tiempo en milisegundos (en este caso, 2 segundos)
+            });
+        });
+    </script>
 </body>
 
 </html>
